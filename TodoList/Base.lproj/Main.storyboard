@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c8z-zz-oEU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -20,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="3G5-NN-8xw" style="IBUITableViewCellStyleDefault" id="pn8-9I-rze">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="3G5-NN-8xw" style="IBUITableViewCellStyleDefault" id="pn8-9I-rze">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pn8-9I-rze" id="lyQ-VW-tfu">
@@ -50,9 +51,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GjU-gq-A9z">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="LhX-UK-YPo"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ioK-tu-qGH"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="LhX-UK-YPo">
+                            <connections>
+                                <action selector="tapEditButton:" destination="BYZ-38-t0r" id="hAQ-d3-uY6"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ioK-tu-qGH">
+                            <connections>
+                                <action selector="tapAddButton:" destination="BYZ-38-t0r" id="b6c-il-Elr"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="6Zx-xC-G23" id="6FB-NC-5PE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,6 +13,7 @@
 		04C77E5327F32C7A00FA55DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C77E5127F32C7A00FA55DB /* Main.storyboard */; };
 		04C77E5527F32C7B00FA55DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C77E5427F32C7B00FA55DB /* Assets.xcassets */; };
 		04C77E5827F32C7B00FA55DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C77E5627F32C7B00FA55DB /* LaunchScreen.storyboard */; };
+		04C77E6027F32FDD00FA55DB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C77E5F27F32FDD00FA55DB /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		04C77E5427F32C7B00FA55DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C77E5727F32C7B00FA55DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04C77E5927F32C7B00FA55DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C77E5F27F32FDD00FA55DB /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				04C77E5427F32C7B00FA55DB /* Assets.xcassets */,
 				04C77E5627F32C7B00FA55DB /* LaunchScreen.storyboard */,
 				04C77E5927F32C7B00FA55DB /* Info.plist */,
+				04C77E5F27F32FDD00FA55DB /* Task.swift */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C77E6027F32FDD00FA55DB /* Task.swift in Sources */,
 				04C77E5027F32C7A00FA55DB /* ViewController.swift in Sources */,
 				04C77E4C27F32C7A00FA55DB /* AppDelegate.swift in Sources */,
 				04C77E4E27F32C7A00FA55DB /* SceneDelegate.swift in Sources */,
@@ -217,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
